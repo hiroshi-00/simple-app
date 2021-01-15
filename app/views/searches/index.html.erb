@@ -1,0 +1,6 @@
+<% if @search.present? %>
+    <%= @search %><span>の検索結果</span>
+    <%= "1-#{@posts.count}件表示" %>
+<% else %>
+  <%= render @posts %>
+<% end %>
